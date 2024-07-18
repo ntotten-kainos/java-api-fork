@@ -9,7 +9,7 @@ COPY . /code
 
 
 # Default value of db host
-ARG DB_HOST=academy2020.cpc8rvmbbd9k.eu-west-2.rds.amazonaws.com
+ARG DB_HOST
 # Can be overwritten when building/running the container.
 ENV DB_HOST=${DB_HOST}
 
@@ -19,12 +19,12 @@ ARG DB_PASSWORD
 ENV DB_PASSWORD=${DB_PASSWORD}
 
 # Default value of db username
-ARG DB_USERNAME=NathanT
+ARG DB_USERNAME
 # can be overwritten at run time
 ENV DB_USERNAME=${DB_USERNAME}
 
 # Default value of db name
-ARG DB_NAME=employee_ShaunG
+ARG DB_NAME
 # Can be overwritten at run time
 ENV DB_NAME=${DB_NAME} 
 
